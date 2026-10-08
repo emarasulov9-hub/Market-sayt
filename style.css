@@ -1,0 +1,263 @@
+/* Umumiy uslublar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f6f0;
+  color: #1c2e24;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background-color: #f7f6f0;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.catalog-btn {
+  background-color: #1e5631;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #1c2e24;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-bar button {
+  background-color: #1c2e24;
+  color: #fff;
+  border: 1px solid #1c2e24;
+  padding: 10px 20px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.user-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  font-size: 0.75rem;
+  gap: 4px;
+}
+
+.action-item i {
+  font-size: 1.2rem;
+  color: #1c2e24;
+}
+
+/* Banner */
+.banner {
+  background-color: #1e5631;
+  color: #fff;
+  border-radius: 12px;
+  padding: 40px 60px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-text h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.banner-text p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.banner-link-btn {
+  background-color: #ffffff;
+  color: #1c2e24;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1c2e24;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn.prev { left: 15px; }
+.nav-btn.next { right: 15px; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+/* Categories */
+.categories {
+  margin-bottom: 40px;
+}
+
+.categories h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #1e5631;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.category-item span {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* Products Section */
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.products-header h2 {
+  font-size: 1.4rem;
+}
+
+.product-count {
+  font-size: 0.75rem;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-image {
+  background-color: #ffffff;
+  border-radius: 12px;
+  height: 220px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #d9534f;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
